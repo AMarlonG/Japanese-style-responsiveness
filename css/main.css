@@ -16,24 +16,18 @@
     font: inherit;
 }
 
-html {
-    color-scheme: dark light;
-}
-
 body {
     min-height: 100%;
     line-height: 1.5;
 }
 
-/*
-  6. Improve media defaults
-*/
 img,
 picture,
 video,
 canvas,
 svg {
     display: block;
+    max-width: 100%;
 }
 
 p,
@@ -50,20 +44,19 @@ h6 {
 #__next {
     isolation: isolate;
 }
-
-
 /* https://www.youtube.com/shorts/2lyDv0wOQuQ */
 
+
 #viewport {
+    background-color: var(--bg-clr);
     height: 100vh;
-    background-color: #F2F2F0;
     text-align: center;
 }
 
 .main-grid {
     display: grid;
-    grid-template-rows: var(--space-2xs-l) 1fr var(--space-2xs-l);
-    grid-template-columns: auto minmax(100px, 350px) auto;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     height: 100%;
 }
@@ -71,9 +64,8 @@ h6 {
 .content {
     grid-row: 2;
     grid-column: 2;
-    /* display: grid; */
-    width: 100%;
+    width: 80%;
+    max-width: 350px;
     aspect-ratio: 20 / 43;
     background-color: black;
-    color: white;
 }
