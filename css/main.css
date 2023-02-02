@@ -1,0 +1,41 @@
+
+
+
+@import "./css/calc.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Serif+JP&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#viewport {
+    height: 100vh;
+    background-color: #F2F2F0;
+    text-align: center;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-rows: var(--space-2xs-l) 1fr var(--space-2xs-l);
+    grid-template-columns: auto minmax(100px, 350px) auto;
+    justify-items: center;
+    height: 100%;
+}
+
+.content {
+    grid-row: 2;
+    grid-column: 2;
+    /* display: grid; */
+    width: 100%;
+    aspect-ratio: 20 / 43;
+    background-color: black;
+    color: white;
+}
