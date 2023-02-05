@@ -66,6 +66,16 @@ h6 {
     text-transform: uppercase;
 }
 
+.jp {
+    font-size: 3rem;
+    justify-self: end;
+}
+
+.ro {
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
 .content-left {
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr;
@@ -93,16 +103,24 @@ h6 {
     text-orientation: upright;
 }
 
-.bushido-jp {
-    font-size: 4rem;
-    justify-self: end;
-}
-
-.bushido-ro {
-    letter-spacing: 0.4rem;
-}
-
 .sword {
-    
+    background-color: white;
+    width: 100%;
+    margin-top: 28px;
 }
 
+.content-right {
+    display: grid;
+    grid-template: repeat(7, 1fr) / 1fr;
+}
+
+.virtues {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.virtues > * {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-align: center;
+}
