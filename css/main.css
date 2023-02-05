@@ -103,9 +103,10 @@ h6 {
     text-orientation: upright;
 }
 
-.sword {
-    background-color: white;
+.katana {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    justify-self: center;
 }
 
 .content-right {
