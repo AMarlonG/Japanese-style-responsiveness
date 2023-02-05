@@ -67,11 +67,13 @@ h6 {
 }
 
 .jp {
+    font-family: var(--jp-font);
     font-size: 3rem;
     justify-self: end;
 }
 
 .ro {
+    font-family: var(--ro-font);
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
 }
