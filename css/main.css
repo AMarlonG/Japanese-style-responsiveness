@@ -66,32 +66,21 @@ h6 {
     text-transform: uppercase;
 }
 
-.jp {
-    font-family: var(--jp-font);
-    font-size: 3rem;
-    justify-self: end;
-}
-
-.ro {
-    font-family: var(--ro-font);
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
-}
-
 .content-left {
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr;
 }
 
+.circle-box {
+    display: grid;
+}
+
 .red-circle {
-    max-width: 95%;
+    width: var(--space-3xl-4xl);
     aspect-ratio: 1 / 1;
     background-color: red;
     clip-path: circle(50% at 50% 50%);
-    /* How the fuck do you center this damn circle!?!?! */
-    margin-left: 10px;
-    margin-block: auto;
-    /* place-self: center; */
+    place-items: center;
 }
 
 .bushido {
@@ -105,10 +94,19 @@ h6 {
     text-orientation: upright;
 }
 
+.bushido-jp {
+    font-family: var(--jp-font);
+    font-size: clamp(2rem, 12vw + 1rem, 4rem);
+    justify-self: end;
+}
+
+.sword {
+    display: grid;
+}
+
 .katana {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    justify-self: center;
+    place-self: center;
+    width: var(--space-3xl-4xl);
 }
 
 .content-right {
@@ -125,4 +123,18 @@ h6 {
     writing-mode: vertical-lr;
     text-orientation: upright;
     text-align: center;
+}
+
+.jp {
+    font-family: var(--jp-font);
+    font-size: clamp(1rem, 8vw + 1rem, 2.5rem);
+    justify-self: end;
+}
+
+.ro {
+    font-family: var(--ro-font);
+    font-size: clamp(0.5rem, 4vw + 0.2rem, 0.8rem);
+    /* font-size: 0.5rem; */
+    font-size: max(0.7rem);
+    letter-spacing: 0.1rem;
 }
