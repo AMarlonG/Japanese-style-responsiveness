@@ -42,6 +42,7 @@ h6 {
 }
 /* https://www.youtube.com/shorts/2lyDv0wOQuQ */
 
+/* Main grid */
 .grid {
     display: grid;
     grid-template-rows: 2fr max-content 2fr;
@@ -50,6 +51,7 @@ h6 {
     margin: 0 auto;
 }
 
+/* Black card */
 .content {
     grid-row: 2;
     width: min(20rem, 100% - 4rem);
@@ -63,6 +65,35 @@ h6 {
     text-transform: uppercase;
 }
 
+/* Text styling */
+.bushido > *,
+.virtues > * {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.bushido-jp {
+    font-family: var(--jp-font);
+    font-size: min(3.5rem, 30vw - 3.5rem);
+    justify-self: end;
+}
+
+.jp {
+    font-family: var(--jp-font);
+    font-size: min(2.3rem, 21vw - 2.5rem);
+    justify-self: end;
+}
+
+.bushido-ro,
+.ro {
+    font-family: var(--ro-font);
+    font-size: clamp(0.5rem, 4vw + 0.2rem, 0.8rem);
+    font-size: 0.5rem;
+    font-size: max(0.7rem);
+    letter-spacing: 0.1rem;
+}
+
+/* All content apart from text */
 .content-left {
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr;
@@ -81,17 +112,6 @@ h6 {
     grid-template: max-content / 2.5fr 1.25fr;
     width: 100%;
     align-items: center;
-}
-
-.bushido > * {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-}
-
-.bushido-jp {
-    font-family: var(--jp-font);
-    font-size: min(3.5rem, 30vw - 3.5rem);
-    justify-self: end;
 }
 
 .sword {
@@ -117,21 +137,3 @@ h6 {
     margin-block: auto;
 }
 
-.virtues > * {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-}
-
-.jp {
-    font-family: var(--jp-font);
-    font-size: min(2.3rem, 21vw - 2.5rem);
-    justify-self: end;
-}
-
-.bushido-ro, .ro {
-    font-family: var(--ro-font);
-    font-size: clamp(0.5rem, 4vw + 0.2rem, 0.8rem);
-    font-size: 0.5rem;
-    font-size: max(0.7rem);
-    letter-spacing: 0.1rem;
-}
