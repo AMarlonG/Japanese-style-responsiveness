@@ -87,8 +87,6 @@ h6 {
 .bushido-ro,
 .ro {
     font-family: var(--ro-font);
-    font-size: clamp(0.5rem, 4vw + 0.2rem, 0.8rem);
-    font-size: 0.5rem;
     font-size: max(0.7rem);
     letter-spacing: 0.1rem;
 }
