@@ -124,7 +124,7 @@ h6 {
 
 .jp {
     font-family: var(--jp-font);
-    font-size: min(2rem, 15vw - 1.5rem);
+    font-size: min(2.3rem, 21vw - 2.5rem);
     justify-self: end;
 }
 
