@@ -52,7 +52,7 @@ h6 {
 
 .content {
     grid-row: 2;
-    width: min(18rem, 100% - 4rem);
+    width: min(20rem, 100% - 4rem);
     aspect-ratio: 20 / 43;
     background-color: black;
     color: white;
@@ -90,7 +90,7 @@ h6 {
 
 .bushido-jp {
     font-family: var(--jp-font);
-    font-size: min(3.5rem, 33vw - 3.5rem);
+    font-size: min(3.5rem, 30vw - 3.5rem);
     justify-self: end;
 }
 
@@ -124,7 +124,7 @@ h6 {
 
 .jp {
     font-family: var(--jp-font);
-    font-size: clamp(1rem, 8vw + 1rem, 2.5rem);
+    font-size: min(2rem, 15vw - 1.5rem);
     justify-self: end;
 }
 
