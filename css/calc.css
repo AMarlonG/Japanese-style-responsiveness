@@ -3,23 +3,14 @@
 :root {
 
 /* Sizes and space */
-    --space-3xl-4xl: clamp(6.75rem, calc(4.75rem + 10.00vw), 12.50rem);
+
 
 /* Colors */
     --bg-clr: #F2F2F0;
+    --red-circle: #E00C04;
 
 /* Fonts */
     --ro-font: 'Montserrat', sans-serif;
     --jp-font: 'Noto Serif JP', serif;
-
-/* Fluid font size */
-    --step--2: clamp(0.64rem, calc(0.56rem + 0.42vw), 0.88rem);
-    --step--1: clamp(0.80rem, calc(0.70rem + 0 52vw), 1.10rem);
-    --step-0: clamp(1.00rem, calc(0.87rem + 0.65vw), 1.38rem);
-    --step-1: clamp(1.25rem, calc(1.09rem + 0.82vw), 1.72rem);
-    --step-2: clamp(1.56rem, calc(1.36rem + 1.02vw), 2.15rem);
-    --step-3: clamp(1.95rem, calc(1.70rem + 1.27vw), 2.69rem);
-    --step-4: clamp(2.44rem, calc(2.12rem + 1.59vw), 3.36rem);
-    --step-5: clamp(3.05rem, calc(2.65rem + 1.99vw), 4.20rem);
 
 }
