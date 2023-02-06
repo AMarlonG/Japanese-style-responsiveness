@@ -52,7 +52,7 @@ h6 {
 
 .content {
     grid-row: 2;
-    width: min(20rem, 100% - 4rem);
+    width: min(18rem, 100% - 4rem);
     aspect-ratio: 20 / 43;
     background-color: black;
     color: white;
@@ -76,9 +76,9 @@ h6 {
     clip-path: circle(50% at 50% 50%);
 }
 
-/* .bushido {
+.bushido {
     display: grid;
-    grid-template-columns: 2.5fr 1.25fr;
+    grid-template: max-content / 2.5fr 1.25fr;
     width: 100%;
     align-items: center;
 }
@@ -90,9 +90,9 @@ h6 {
 
 .bushido-jp {
     font-family: var(--jp-font);
-    font-size: clamp(1rem, calc(3.5vw + 2.3rem), 4rem);
+    font-size: min(3.5rem, 33vw - 3.5rem);
     justify-self: end;
-} */
+}
 
 .sword {
     display: grid;
@@ -100,15 +100,15 @@ h6 {
 }
 
 .katana {
-    width: min(6rem, 40vw - 3.5rem);
+    width: min(5rem, 40vw - 3.5rem);
 }
-/* 
+
 .content-right {
     display: grid;
     grid-template: repeat(7, 1fr) / 1fr;
     grid-auto-rows: 1fr
-} */
-/* 
+} 
+
 .virtues {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -117,7 +117,7 @@ h6 {
 .virtues > * {
     writing-mode: vertical-lr;
     text-orientation: upright;
-} */
+}
 
 .jp {
     font-family: var(--jp-font);
