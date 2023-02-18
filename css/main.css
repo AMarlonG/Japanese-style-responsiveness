@@ -47,7 +47,7 @@ h6 {
     display: grid;
     grid-template-rows: 2fr max-content 2fr;
     justify-items: center;
-    height: 100vh;
+    height: 100svh;
     margin: 0 auto;
 }
 
